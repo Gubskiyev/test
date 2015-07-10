@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gubskiyev
- * Date: 10.07.2015
- * Time: 11:07
- */
+require_once __DIR__ . "/models/news.php";
+
+
+$items = News::getAll();
+
+var_dump($items);
