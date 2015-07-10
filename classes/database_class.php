@@ -11,7 +11,7 @@ class Db {
         $this->mysqli->query("SET NAMES 'utf8'");
     }
 
-    public function query($query) {
+    public function query($query, $class = "stdClass") {
         $res = $this->mysqli->query($query);
         if (false === $res) return false;
         $ret = [];

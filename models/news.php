@@ -6,9 +6,9 @@ class News {
     public $title;
     public $text;
 
-    static function getAll() {
+    public static function getAll() {
         $db = new Db();
-        return $db->query("SELECT * FROM news");
+        return $db->query("SELECT * FROM news", "News");
     }
 
 
